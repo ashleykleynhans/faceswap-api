@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.0.3] - 2026-07-27
+
+### Changed
+- Bump fastapi requirement from >=0.139.2 to >=0.140.0
+
 ## [2.0.2] - 2026-07-16
 
 ### Fixed
