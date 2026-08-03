@@ -1,5 +1,5 @@
 fastapi>=0.140.0
-uvicorn[standard]>=0.51.0
+uvicorn[standard]>=0.52.0
 pydantic>=2.13.4
 Pillow
 PyYAML
