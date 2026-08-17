@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.4] - 2026-08-17
+
+### Changed
+- Bump fastapi requirement from >=0.140.0 to >=0.141.1
+- Bump uvicorn requirement from >=0.52.0 to >=0.52.3
+
 ## [2.0.3] - 2026-07-27
 
 ### Changed
