@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.5] - 2026-08-24
+
+### Changed
+- Bump CUDA from 12.4.1 to 12.6.3 and PyTorch from 2.6.0+cu124 to 2.13.0+cu126
+- Bump uvicorn requirement from >=0.52.3 to >=0.52.4
+
 ## [2.0.4] - 2026-08-17
 
 ### Changed

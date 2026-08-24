@@ -1,4 +1,4 @@
-ARG CUDA_VERSION="12.4.1"
+ARG CUDA_VERSION="12.6.3"
 
 FROM nvidia/cuda:${CUDA_VERSION}-cudnn-devel-ubuntu22.04
 
@@ -12,9 +12,9 @@ RUN apt-get update && apt-get upgrade -y && \
 
 WORKDIR /app
 
-# Install PyTorch with CUDA 12.4 support
-ARG INDEX_URL="https://download.pytorch.org/whl/cu124"
-ARG TORCH_VERSION="2.6.0+cu124"
+# Install PyTorch with CUDA 12.6 support
+ARG INDEX_URL="https://download.pytorch.org/whl/cu126"
+ARG TORCH_VERSION="2.13.0+cu126"
 RUN pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 
 # Install Python dependencies (cached layer)

@@ -65,7 +65,7 @@ or rights. The author assumes no liability for any misuse.
 │   └── test_coverage_gaps.py           # Edge case coverage
 ├── examples/
 │   └── face_swap.py                # Async + sync client examples
-├── Dockerfile                      # CUDA 12.4.1, onnxruntime-gpu, uvicorn
+├── Dockerfile                      # CUDA 12.6.3, onnxruntime-gpu, uvicorn
 ├── requirements.txt
 ├── pytest.ini
 └── .coveragerc
@@ -110,14 +110,14 @@ pip3 install -r requirements.txt
 
 #### Runpod
 
-For Runpod GPU pods, install PyTorch with CUDA 12.4 support before
+For Runpod GPU pods, install PyTorch with CUDA 12.6 support before
 installing the other dependencies:
 
 ```bash
 apt update && apt -y install git-lfs
 python3 -m venv .venv
 source .venv/bin/activate
-pip3 install torch==2.6.0+cu124 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip3 install torch==2.13.0+cu126 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 pip3 install onnxruntime-gpu
 pip3 install -r requirements.txt
 ```
