@@ -1,20 +1,20 @@
-ARG CUDA_VERSION="12.6.3"
+ARG CUDA_VERSION="13.0.3"
 
-FROM nvidia/cuda:${CUDA_VERSION}-cudnn-devel-ubuntu22.04
+FROM nvidia/cuda:${CUDA_VERSION}-cudnn-devel-ubuntu24.04
 
 # System dependencies
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y \
-    python3-dev python3-pip python3.10-venv \
+    python3-dev python3-pip python3-venv \
     libglib2.0-0 libsm6 libgl1 libxrender1 libxext6 \
     ffmpeg git git-lfs wget unzip && \
     apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Install PyTorch with CUDA 12.6 support
-ARG INDEX_URL="https://download.pytorch.org/whl/cu126"
-ARG TORCH_VERSION="2.13.0+cu126"
+# Install PyTorch with CUDA 13.0 support
+ARG INDEX_URL="https://download.pytorch.org/whl/cu130"
+ARG TORCH_VERSION="2.14.0+cu130"
 RUN pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 
 # Install Python dependencies (cached layer)

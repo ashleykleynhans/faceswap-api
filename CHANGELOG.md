@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.6] - 2026-09-07
+
+### Changed
+- Bump CUDA from 12.6.3 to 13.0.3 (ubuntu22.04 -> ubuntu24.04) and PyTorch from 2.13.0+cu126 to 2.14.0+cu130
+- Update Python dependencies to latest: Pillow 12.3.0, PyYAML 6.0.3, addict 2.4.0, future 1.0.0, lmdb 2.3.0, lpips 0.1.4, numpy 2.5.3, onnxruntime 1.29.0, opencv-python 5.0.0.93, protobuf 7.36.1, scikit-image 0.26.0, scipy 1.18.1, tb-nightly 2.21.0, torch 2.14.0, torchvision 0.29.0, tqdm 4.70.0, yapf 0.43.0, python-dotenv 1.2.3, python-multipart 0.0.32
+
 ## [2.0.5] - 2026-08-24
 
 ### Changed
