@@ -185,8 +185,8 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="FaceSwap API",
-    version="2.0.0",
-    description="GPU-accelerated face swapping API with 13 models, "
+    version="2.0.7",
+    description="GPU-accelerated face swapping API with 14 models, "
     "CodeFormer restoration, and VRAM-safe serial queue processing.",
     docs_url="/docs",
     lifespan=lifespan,

@@ -27,6 +27,7 @@ MODELS_3_0_0 = f"{_BASE}/models-3.0.0"
 MODELS_3_1_0 = f"{_BASE}/models-3.1.0"
 MODELS_3_3_0 = f"{_BASE}/models-3.3.0"
 MODELS_3_4_0 = f"{_BASE}/models-3.4.0"
+MODELS_3_9_0 = f"{_BASE}/models-3.9.0"
 CODEFORMER_URL = "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0"
 
 DOWNLOADS = [
@@ -43,6 +44,8 @@ DOWNLOADS = [
     (FACE_SWAPPER, "uniface_256.onnx", f"{MODELS_3_0_0}/uniface_256.onnx"),
     # hififace — models-3.1.0
     (FACE_SWAPPER, "hififace_unofficial_256.onnx", f"{MODELS_3_1_0}/hififace_unofficial_256.onnx"),
+    # alphaface — models-3.9.0
+    (FACE_SWAPPER, "alphaface_256.onnx", f"{MODELS_3_9_0}/alphaface_256.onnx"),
     # hyperswap — models-3.3.0
     (FACE_SWAPPER, "hyperswap_1a_256.onnx", f"{MODELS_3_3_0}/hyperswap_1a_256.onnx"),
     (FACE_SWAPPER, "hyperswap_1b_256.onnx", f"{MODELS_3_3_0}/hyperswap_1b_256.onnx"),

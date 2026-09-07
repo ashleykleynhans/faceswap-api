@@ -1,6 +1,6 @@
 # FaceSwap API
 
-GPU-accelerated face swapping API with 13 face swap models,
+GPU-accelerated face swapping API with 14 face swap models,
 CodeFormer restoration, and VRAM-safe serial queue processing.
 
 Powered by [insightface](https://github.com/deepinsight/insightface).
@@ -15,7 +15,7 @@ or rights. The author assumes no liability for any misuse.
 
 ## Features
 
-- **13 face swap models**: inswapper, simswap, ghost, hififace, hyperswap, blendswap, uniface
+- **14 face swap models**: inswapper, simswap, ghost, hififace, hyperswap, blendswap, uniface, alphaface
 - **CodeFormer face restoration**: with RealESRGAN background upscaling
 - **Face selector**: gender and age filtering, 7 sort orders
 - **Identity blending**: configurable source/target identity weight
@@ -39,7 +39,7 @@ or rights. The author assumes no liability for any misuse.
 │   │   ├── image_utils.py          # Base64 encode/decode, temp file I/O
 │   │   ├── face_analyzer.py        # insightface buffalo_l wrapper
 │   │   ├── face_swapper.py         # Enhanced swap pipeline (FaceFusion fork)
-│   │   ├── face_swapper_models.py  # 13 model definitions + metadata
+│   │   ├── face_swapper_models.py  # 14 model definitions + metadata
 │   │   ├── face_selector.py        # Gender/age filter, 7 sort orders
 │   │   ├── face_swap_service.py    # Orchestration: process + face_swap
 │   │   └── restoration.py          # CodeFormer + RealESRGAN
@@ -139,7 +139,7 @@ git clone https://huggingface.co/spaces/sczhou/CodeFormer
 
 ### 2. Face swap models and detection weights
 
-The download script fetches all 13 face swapper ONNX models, 3 embedding
+The download script fetches all 14 face swapper ONNX models, 3 embedding
 converters, the insightface buffalo_l face detection model, and CodeFormer
 restoration weights (~5.3 GB total).  **Clone CodeFormer first**, as the
 script places weights under the CodeFormer directory tree.
@@ -150,7 +150,7 @@ python3 scripts/download_models.py
 ```
 
 This places files under:
-- `checkpoints/face_swapper/` — 13 swapper models + 3 converter ONNX files
+- `checkpoints/face_swapper/` — 14 swapper models + 3 converter ONNX files
 - `checkpoints/models/buffalo_l/` — insightface detection model
 - `CodeFormer/CodeFormer/weights/` — codeformer.pth, retinaface, parsing, RealESRGAN
 
@@ -253,6 +253,7 @@ result = r.json()
 | `hyperswap_1c_256` | 1024x1024 | embedding_norm |
 | `blendswap_256` | 1024x1024 | source_face |
 | `uniface_256` | 1024x1024 | source_face |
+| `alphaface_256` | 1024x1024 | embedding_raw |
 
 ## Docker
 

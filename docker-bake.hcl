@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "2.0.6"
+    default = "2.0.7"
 }
 
 variable "CU_VERSION" {
@@ -31,7 +31,7 @@ target "default" {
     tags = ["${REGISTRY}/${REGISTRY_USER}/${APP}:${RELEASE}"]
     annotations = [
         "org.opencontainers.image.title=FaceSwap API",
-        "org.opencontainers.image.description=GPU-accelerated face swapping API with 13 models, CodeFormer restoration, and VRAM-safe serial queue",
+        "org.opencontainers.image.description=GPU-accelerated face swapping API with 14 models, CodeFormer restoration, and VRAM-safe serial queue",
         "org.opencontainers.image.version=${RELEASE}",
         "org.opencontainers.image.vendor=ashleykleynhans",
         "org.opencontainers.image.source=https://github.com/ashleykleynhans/${APP}",

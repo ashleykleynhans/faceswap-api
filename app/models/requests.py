@@ -64,7 +64,7 @@ class FaceSwapRequest(BaseModel):
     )
     face_swapper_model: str = Field(
         "inswapper_128",
-        description="Face swapper model name. See docs for full list of 13 models.",
+        description="Face swapper model name. See docs for full list of 14 models.",
     )
     face_swapper_resolution: Optional[str] = Field(
         None,

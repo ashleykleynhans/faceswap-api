@@ -238,6 +238,11 @@ def _prepare_embedding_norm(source_face: object) -> np.ndarray:
     return source_face.normed_embedding.reshape((1, -1))
 
 
+def _prepare_embedding_direct(source_face: object) -> np.ndarray:
+    """alphaface: use raw embedding reshaped to (1, -1)."""
+    return source_face.embedding.reshape((1, -1))
+
+
 def _prepare_source_face(
     source_face: object, frame: np.ndarray, source_size: int,
 ) -> np.ndarray:
@@ -370,6 +375,12 @@ def swap_face_enhanced(
         )
     elif source_type == "embedding_norm":
         source_input = _prepare_embedding_norm(source_face)
+        source_input = _balance_embedding(
+            source_input, target_face.embedding, weight,
+            l2_norm_target=l2_norm,
+        )
+    elif source_type == "embedding_raw":
+        source_input = _prepare_embedding_direct(source_face)
         source_input = _balance_embedding(
             source_input, target_face.embedding, weight,
             l2_norm_target=l2_norm,
