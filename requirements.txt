@@ -15,7 +15,7 @@ opencv-python>=5.0.0.93
 protobuf>=7.36.1
 scikit-image>=0.26.0
 scipy>=1.18.1
-tb-nightly>=2.21.0
+tb-nightly
 torch>=2.14.0
 torchvision>=0.29.0
 tqdm>=4.70.0
