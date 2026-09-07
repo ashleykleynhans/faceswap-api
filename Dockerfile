@@ -20,7 +20,7 @@ RUN pip3 install --no-cache-dir --break-system-packages torch==${TORCH_VERSION} 
 # Install Python dependencies (cached layer)
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt && \
-    pip3 uninstall -y onnxruntime && \
+    pip3 uninstall --break-system-packages -y onnxruntime && \
     pip3 install --break-system-packages --no-cache-dir onnxruntime-gpu
 
 # Clone CodeFormer first (download script places weights under CodeFormer/CodeFormer/weights/)
