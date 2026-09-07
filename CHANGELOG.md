@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.7] - 2026-09-07
+## [2.1.0] - 2026-09-07
 
 ### Added
 - Port `alphaface_256` from FaceFusion 3.9.0: new 256x256 face swapper (AlphaFace, Non-Commercial, 2026) with arcface_128 warp template, raw embedding (no converter), L2-normalized target blending, 256x256/512x512/768x768/1024x1024 resolutions
