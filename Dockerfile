@@ -15,13 +15,13 @@ WORKDIR /app
 # Install PyTorch with CUDA 13.0 support
 ARG INDEX_URL="https://download.pytorch.org/whl/cu130"
 ARG TORCH_VERSION="2.14.0+cu130"
-RUN pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
+RUN pip3 install --no-cache-dir --break-system-packages torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 
 # Install Python dependencies (cached layer)
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt && \
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt && \
     pip3 uninstall -y onnxruntime && \
-    pip3 install onnxruntime-gpu
+    pip3 install --break-system-packages --no-cache-dir onnxruntime-gpu
 
 # Clone CodeFormer first (download script places weights under CodeFormer/CodeFormer/weights/)
 RUN git lfs install && \
@@ -29,7 +29,7 @@ RUN git lfs install && \
 
 # Download all models (cached layer — only re-runs when download script changes)
 COPY scripts/download_models.py /tmp/
-RUN pip3 install --no-cache-dir tqdm requests && \
+RUN pip3 install --no-cache-dir --break-system-packages tqdm requests && \
     python3 /tmp/download_models.py /app && \
     rm /tmp/download_models.py
 
