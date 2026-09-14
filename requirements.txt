@@ -18,7 +18,7 @@ scipy>=1.18.1
 tb-nightly
 torch>=2.14.0
 torchvision>=0.29.0
-tqdm>=4.70.0
+tqdm>=4.70.1
 yapf>=0.43.0
 python-dotenv>=1.2.3
 python-multipart>=0.0.32
