@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.1] - 2026-09-14
+
+### Changed
+- Bump dependencies to latest: uvicorn 0.52.4 -> 0.53.0, insightface 1.0.1 -> 2.0, onnxruntime 1.29.0 -> 1.30.0, tqdm 4.70.0 -> 4.70.1
+- Verify GitHub Actions at latest major: actions/checkout v7, actions/setup-python v7, docker/setup-buildx-action v4, docker/login-action v4, actions/upload-artifact v7
+
 ## [2.1.0] - 2026-09-07
 
 ### Added
