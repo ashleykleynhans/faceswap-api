@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.2] - 2026-09-14
+
+### Fixed
+- Fix StarletteDeprecationWarning from fastapi.testclient/starlette.testclient with httpx: update pytest.ini filterwarnings to ignore starlette.exceptions.StarletteDeprecationWarning
+
 ## [2.1.1] - 2026-09-14
 
 ### Changed
