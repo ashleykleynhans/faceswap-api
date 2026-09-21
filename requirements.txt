@@ -12,7 +12,7 @@ numpy>=2.5.3
 onnx==1.22.0
 onnxruntime>=1.30.0
 opencv-python>=5.0.0.93
-protobuf>=7.36.1
+protobuf>=7.36.2
 scikit-image>=0.26.0
 scipy>=1.18.1
 tb-nightly
