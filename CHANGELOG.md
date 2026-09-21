@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.3] - 2026-09-21
+
+### Changed
+- Bump protobuf requirement from >=7.36.1 to >=7.36.2
+
 ## [2.1.2] - 2026-09-14
 
 ### Fixed
