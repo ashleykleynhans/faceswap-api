@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.4] - 2026-09-28
+
+### Changed
+- Bump uvicorn requirement from >=0.53.0 to >=0.54.0
+- Bump onnx from 1.22.0 to 1.23.0
+
 ## [2.1.3] - 2026-09-21
 
 ### Changed
