@@ -14,7 +14,7 @@ WORKDIR /app
 
 # Install PyTorch with CUDA 13.0 support
 ARG INDEX_URL="https://download.pytorch.org/whl/cu130"
-ARG TORCH_VERSION="2.14.0+cu130"
+ARG TORCH_VERSION="2.14.1+cu130"
 RUN pip3 install --no-cache-dir --break-system-packages torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 
 # Install Python dependencies (cached layer)

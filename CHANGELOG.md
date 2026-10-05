@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.5] - 2026-10-05
+
+### Changed
+- Bump dependencies to latest: fastapi 0.141.1 -> 0.142.2, insightface 2.0 -> 2.1, lmdb 2.3.0 -> 3.0.0, onnx 1.23.0 -> 1.23.1, torch 2.14.0 -> 2.14.1, torchvision 0.29.0 -> 0.29.1, python-dotenv 1.2.3 -> 1.2.4, pytest-mock 3.15.1 -> 3.16.0
+- Bump PyTorch CUDA wheel from 2.14.0+cu130 to 2.14.1+cu130
+
 ## [2.1.4] - 2026-09-28
 
 ### Changed

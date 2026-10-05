@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "2.1.4"
+    default = "2.1.5"
 }
 
 variable "CU_VERSION" {
@@ -23,7 +23,7 @@ variable "CUDA_VERSION" {
 }
 
 variable "TORCH_VERSION" {
-    default = "2.14.0"
+    default = "2.14.1"
 }
 
 target "default" {
