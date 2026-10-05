@@ -9,7 +9,7 @@ insightface>=2.0
 lmdb>=2.3.0
 lpips>=0.1.4
 numpy>=2.5.3
-onnx==1.23.0
+onnx==1.23.1
 onnxruntime>=1.30.0
 opencv-python>=5.0.0.93
 protobuf>=7.36.2
