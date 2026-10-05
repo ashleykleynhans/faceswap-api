@@ -16,7 +16,7 @@ protobuf>=7.36.2
 scikit-image>=0.26.0
 scipy>=1.18.1
 tb-nightly
-torch>=2.14.0
+torch>=2.14.1
 torchvision>=0.29.0
 tqdm>=4.70.1
 yapf>=0.43.0
