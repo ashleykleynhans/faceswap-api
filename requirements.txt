@@ -1,6 +1,6 @@
 fastapi>=0.142.2
 uvicorn[standard]>=0.54.0
-pydantic>=2.13.5
+pydantic>=2.14.0
 Pillow>=12.3.0
 PyYAML>=6.0.3
 addict>=2.4.0
