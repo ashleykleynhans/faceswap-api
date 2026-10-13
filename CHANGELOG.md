@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.6] - 2026-10-13
+
+### Changed
+- Bump dependencies to latest: fastapi 0.142.2 -> 0.143.0, pydantic 2.13.5 -> 2.14.1, numpy 2.5.3 -> 2.5.4, onnx 1.23.1 -> 1.23.2, onnxruntime 1.30.0 -> 1.31.0
+
 ## [2.1.5] - 2026-10-05
 
 ### Changed
