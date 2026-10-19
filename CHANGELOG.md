@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.7] - 2026-10-19
+
+### Changed
+- Bump dependencies to latest: fastapi 0.143.0 -> 0.146.0, Pillow 12.3.0 -> 13.0.0, pytest-mock 3.16.0 -> 3.17.0
+
 ## [2.1.6] - 2026-10-13
 
 ### Changed

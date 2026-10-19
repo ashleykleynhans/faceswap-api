@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "2.1.6"
+    default = "2.1.7"
 }
 
 variable "CU_VERSION" {
