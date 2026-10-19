@@ -1,7 +1,7 @@
-fastapi>=0.143.0
+fastapi>=0.146.0
 uvicorn[standard]>=0.54.0
 pydantic>=2.14.1
-Pillow>=12.3.0
+Pillow>=13.0.0
 PyYAML>=6.0.3
 addict>=2.4.0
 future>=1.0.0
@@ -25,6 +25,6 @@ python-multipart>=0.0.32
 pytest>=9.1.1
 pytest-asyncio>=1.4.0
 pytest-cov>=7.1.0
-pytest-mock>=3.16.0
+pytest-mock>=3.17.0
 httpx>=0.28.1
 rich>=15.0.0
