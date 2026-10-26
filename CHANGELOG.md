@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.8] - 2026-10-26
+
+### Changed
+- Bump dependencies to latest: fastapi 0.146.0 -> 0.162.0, pytest-asyncio 1.4.0 -> 1.4.1
+
 ## [2.1.7] - 2026-10-19
 
 ### Changed
