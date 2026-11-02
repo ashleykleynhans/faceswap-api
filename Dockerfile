@@ -1,4 +1,4 @@
-ARG CUDA_VERSION="13.0.3"
+ARG CUDA_VERSION="13.2.1"
 
 FROM nvidia/cuda:${CUDA_VERSION}-cudnn-devel-ubuntu24.04
 
@@ -12,9 +12,9 @@ RUN apt-get update && apt-get upgrade -y && \
 
 WORKDIR /app
 
-# Install PyTorch with CUDA 13.0 support
-ARG INDEX_URL="https://download.pytorch.org/whl/cu130"
-ARG TORCH_VERSION="2.14.1+cu130"
+# Install PyTorch with CUDA 13.2 support
+ARG INDEX_URL="https://download.pytorch.org/whl/cu132"
+ARG TORCH_VERSION="2.15.0+cu132"
 RUN pip3 install --no-cache-dir --break-system-packages torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL}
 
 # Install Python dependencies (cached layer)

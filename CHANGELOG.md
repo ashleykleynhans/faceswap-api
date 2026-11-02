@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.0] - 2026-11-02
+
+### Changed
+- Bump dependencies to latest: pydantic 2.14.1 -> 2.14.2, onnxruntime 1.31.0 -> 1.31.1, torch 2.14.1 -> 2.15.0, torchvision 0.29.1 -> 0.29.2, python-multipart 0.0.32 -> 0.0.33, pytest 9.1.1 -> 9.2.0, pytest-asyncio 1.4.1 -> 1.4.1.post1
+- Bump CUDA from 13.0.3 to 13.2.1 and PyTorch CUDA wheel from 2.14.1+cu130 to 2.15.0+cu132
+
 ## [2.1.8] - 2026-10-26
 
 ### Changed
