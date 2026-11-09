@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.2.1] - 2026-11-09
+
+### Changed
+- Bump dependencies to latest: fastapi 0.162.0 -> 0.162.2, pydantic 2.14.2 -> 2.14.3
+
 ## [2.2.0] - 2026-11-02
 
 ### Changed
