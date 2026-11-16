@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.2.2] - 2026-11-16
+
+### Changed
+- Bump dependencies to latest: fastapi 0.162.2 -> 0.163.1, numpy 2.5.4 -> 2.5.5, onnxruntime 1.31.1 -> 1.32.0, pytest-asyncio 1.4.1.post1 -> 1.5.0
+
 ## [2.2.1] - 2026-11-09
 
 ### Changed
