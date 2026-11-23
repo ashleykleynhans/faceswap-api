@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.2.3] - 2026-11-23
+
+### Changed
+- Bump dependencies to latest: fastapi 0.163.1 -> 0.165.0, pydantic 2.14.3 -> 2.14.4, PyYAML 6.0.3 -> 6.0.4, opencv-python 5.0.0.93 -> 5.1.0.95, python-multipart 0.0.33 -> 0.0.34
+
 ## [2.2.2] - 2026-11-16
 
 ### Changed
